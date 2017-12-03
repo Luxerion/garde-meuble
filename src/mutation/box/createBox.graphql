@@ -1,0 +1,9 @@
+mutation createBox($identifier: String!){
+    admin{
+        box{
+            create(identifier: $identifier) {
+                id
+            }
+        }
+    }
+}

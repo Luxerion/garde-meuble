@@ -1,0 +1,9 @@
+mutation deleteBox($id: Int!){
+    admin{
+        box{
+            delete(id: $id){
+                id
+            }
+        }
+    }
+}

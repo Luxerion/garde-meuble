@@ -1,0 +1,15 @@
+mutation updateClient($firstname: String!, $lastname: String!, $address: String!, $phone: String!, $id: Int!){
+    admin{
+        client{
+            update(firstname: $firstname, lastname: $lastname, address: $address, phone: $phone, id: $id){
+            	id
+            	firstname
+            	lastname
+            	createdAt
+            	boxesCount
+            	phone
+            	address
+            }
+        }
+    }
+}

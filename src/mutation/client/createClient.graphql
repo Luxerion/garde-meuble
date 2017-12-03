@@ -1,0 +1,15 @@
+mutation createClient($firstname: String!, $lastname: String!, $address: String!, $phone: String!){
+    admin{
+        client{
+            create(firstname: $firstname, lastname: $lastname, address: $address, phone: $phone){
+            	id
+            	firstname
+            	lastname
+            	createdAt
+            	boxesCount
+            	phone
+            	address
+            }
+        }
+    }
+}

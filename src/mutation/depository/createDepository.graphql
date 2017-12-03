@@ -1,0 +1,9 @@
+mutation createDepository($name: String!, $address: String!, $width: Int!, $length: Int!, $height: Int!){
+    admin{
+        depository{
+            create(name: $name, address: $address, width: $width, length: $length, height: $height){
+                id
+            }
+        }
+    }
+}

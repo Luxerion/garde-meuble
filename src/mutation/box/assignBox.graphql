@@ -1,0 +1,9 @@
+mutation assignBox($id: Int!, $clientId: Int, $contents: String){
+    admin{
+        box{
+            assign(id: $id, clientId: $clientId, contents: $contents){
+                id
+            }
+        }
+    }
+}

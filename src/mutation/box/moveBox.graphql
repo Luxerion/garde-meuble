@@ -1,0 +1,9 @@
+mutation moveBox($id: Int!, $x: Int!, $y: Int!, $z: Int!, $depositoryId: Int){
+    admin{
+        box{
+            move(id: $id, x: $x, y: $y, z: $z, depositoryId: $depositoryId){
+                id
+            }
+        }
+    }
+}
